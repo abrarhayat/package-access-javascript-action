@@ -8,6 +8,9 @@ inputs:
     description: 'Whether to include the current repo in the check'
     required: false
     default: 'false'
+  personal-access-token: #if using a personal access token (PAT), set it here
+    description: 'Personal access token from GitHub'
+    required: false
 outputs:
   has-access-to-packages: # whether the user has access to packages
     description: 'Whether the user has access to packages'

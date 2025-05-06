@@ -7,8 +7,13 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 const includeCurrentRepo = core.getInput('include-current-repo') === 'true';
-
-github.getOctokit(process.env.GITHUB_TOKEN).rest.packages.listPackagesForOrganization({
+const personalAccessToken = core.getInput('personal-access-token');
+if (personalAccessToken) {
+  console.log("Using personal access token.");
+} else {
+  console.log("Using default token.");
+}
+github.getOctokit(personalAccessToken || process.env.GITHUB_TOKEN).rest.packages.listPackagesForOrganization({
   org: core.getInput('organization') || process.env.GITHUB_REPOSITORY_OWNER,
   package_type: "maven",
   per_page: 500,

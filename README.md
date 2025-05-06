@@ -10,6 +10,10 @@
 
 **Optional** Whether the current repo packages need to be includes to the check. Defaults to ```false```
 
+### `personal-access-token`
+
+**Optional** Enter the personal access token as input if using
+
 ## Example usage
 
 ```yaml
@@ -19,6 +23,7 @@ uses: actions/package-access-javascript-action@master
 with:
   organisation: 'you-org-name'
   include-current-repo: 'true'
+  personal-access-token: 'xxxxxx'
 ```
 
 ## Testing Locally
