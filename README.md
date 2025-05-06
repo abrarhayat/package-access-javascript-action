@@ -23,7 +23,7 @@ with:
 
 ## Testing Locally
 
-If you're testing the script locally, make sure to create an ```.env``` file with a valid github personal access token, current repo name (where the action is running) in the owner/repo format  and a test input organsation name
+If you're testing the script locally, make sure to create an ```.env``` file with a valid github personal access token, current repo name (where the action is running) in the owner/repo format  and a test input organisation name
 
 ```sh
 GITHUB_TOKEN=xxxxxxxxx

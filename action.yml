@@ -1,5 +1,5 @@
-name: 'Check package access in organsation'
-description: 'Check package access in organsation'
+name: 'Check package access in organisation'
+description: 'Check package access in organisation'
 inputs:
   organisation:  # name of organisation in all lowercase
     description: 'Name of the organisation'
