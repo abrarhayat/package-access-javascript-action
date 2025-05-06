@@ -23,7 +23,7 @@ uses: actions/package-access-javascript-action@master
 with:
   organisation: 'you-org-name'
   include-current-repo: 'true'
-  personal-access-token: 'xxxxxx'
+  personal-access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 ```
 
 ## Testing Locally

@@ -16,4 +16,4 @@ outputs:
     description: 'Whether the user has access to packages'
 runs:
   using: 'node20'
-  main: 'index.js'
+  main: 'dist/index.js'
