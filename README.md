@@ -14,12 +14,20 @@
 
 **Optional** Enter the personal access token as input if using
 
+### Building the distribution
+
+The distribution must be built and commited before using.  
+
+```javascript
+ncc build index.js --license licenses.txt
+```
+
 ## Example usage
 
 ```yaml
 - name: Check for api token access
 id: check-package-access
-uses: actions/package-access-javascript-action@master
+uses: abrarhayat/package-access-javascript-action@master
 with:
   organisation: 'you-org-name'
   include-current-repo: 'true'
