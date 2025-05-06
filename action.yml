@@ -1,0 +1,16 @@
+name: 'Check package access in organsation'
+description: 'Check package access in organsation'
+inputs:
+  organisation:  # name of organisation in all lowercase
+    description: 'Name of the organisation'
+    required: true
+  include-current-repo:  # whether to include the current repo in the check
+    description: 'Whether to include the current repo in the check'
+    required: false
+    default: 'false'
+outputs:
+  has-access-to-packages: # whether the user has access to packages
+    description: 'Whether the user has access to packages'
+runs:
+  using: 'node20'
+  main: 'index.js'
