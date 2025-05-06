@@ -14,6 +14,14 @@
 
 **Optional** Enter the personal access token as input if using
 
+### Building the distribution
+
+The distribution must be built and commited before using.  
+
+```javascript
+ncc build index.js --license licenses.txt
+```
+
 ## Example usage
 
 ```yaml
